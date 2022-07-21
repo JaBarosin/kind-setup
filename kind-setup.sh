@@ -1,9 +1,6 @@
 #!/bin/bash
 # Notes on setting up k8s v2 demo VM
 #
-# username = 	demo
-# pw =		bit9se# 
-#
 # Install necessary tools:
 # - vmtools
 # - curl
