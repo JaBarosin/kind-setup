@@ -8,10 +8,10 @@ Tested with ubuntu 18.04 and 20.04.
 
 1. Update and install curl
 ```sh
-apt update -y
-apt install open-vm-tools -y
-apt update && sudo apt upgrade -y
-apt install curl -y
+sudo apt update -y
+sudo apt install open-vm-tools -y
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl -y
 ```
 
 2. Download script to target device
