@@ -12,6 +12,7 @@ apt update -y
 apt install open-vm-tools -y
 apt update && sudo apt upgrade -y
 apt install curl -y
+```
 
 2. Download script to target device
 ```bash
