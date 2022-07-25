@@ -6,29 +6,36 @@ Tested with ubuntu 18.04 and 20.04.
 
 ### Steps
 
-1. Download script to target device
+1. Update and install curl
+```sh
+apt update -y
+apt install open-vm-tools -y
+apt update && sudo apt upgrade -y
+apt install curl -y
+
+2. Download script to target device
 ```bash
 curl "https://raw.githubusercontent.com/JaBarosin/kind-setup/main/kind-setup.sh" -o "kind-setup.sh"
 ```
-2. Run script using a user account with sudo access
 
+3. Run script using a user account with sudo access
 ```sh
 chmod +x ./kind-setup.sh
 sudo ./kind-setup.sh
 ```
 
-3. Confirm Docker is installed and running
+4. Confirm Docker is installed and running
 ```sh
 systemctl status docker
 ```
 Start docker `systemctl start docker` if needed
 
-4. Confirm kubectl and kind are installed and accessible
+5. Confirm kubectl and kind are installed and accessible
 ```sh
 kubectl version && echo -e " \n" && kind version
 ```
 
-5. Create kind cluster
+6. Create kind cluster
 ```sh
 cat > kind-config.yaml <<EOF
 kind: Cluster
@@ -44,7 +51,7 @@ EOF
 kind create cluster --name kind-demo --config kind.config.yaml
 ```
 
-6. Confirm cluster access
+7. Confirm cluster access
 ```sh
 kubectl cluster-info
 kubectl get no -o wide
