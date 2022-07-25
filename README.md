@@ -19,7 +19,7 @@ sudo apt install open-vm-tools -y && sudo apt update && sudo apt upgrade -y && s
 curl "https://raw.githubusercontent.com/JaBarosin/kind-setup/main/kind-setup.sh" -o "kind-setup.sh"
 ```
 
-3. Run script using a user account with sudo access
+3. Run script using a user account with sudo access.
 ```sh
 chmod +x ./kind-setup.sh
 sudo ./kind-setup.sh
@@ -29,7 +29,7 @@ sudo ./kind-setup.sh
 ```sh
 systemctl status docker
 ```
-Start docker `systemctl start docker` if needed
+Start docker `systemctl start docker` if needed.
 
 5. Confirm kubectl and kind are installed and accessible.
 ```sh
