@@ -21,8 +21,7 @@ curl "https://raw.githubusercontent.com/JaBarosin/kind-setup/main/kind-setup.sh"
 
 3. Run script using a user account with sudo access.
 ```sh
-chmod +x ./kind-setup.sh
-sudo ./kind-setup.sh
+chmod +x ./kind-setup.sh && sudo ./kind-setup.sh
 ```
 
 4. Confirm Docker is installed and running.
