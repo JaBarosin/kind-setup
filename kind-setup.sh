@@ -21,9 +21,6 @@ apt update && sudo apt upgrade -y
 # Install curl
 apt install curl -y
 
-# Install banner tools
-apt install figlet toilet -y
-
 #Install ssh
 apt update
 apt install openssh-server -y
