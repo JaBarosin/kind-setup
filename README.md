@@ -29,6 +29,10 @@ chmod +x ./kind-setup.sh && sudo ./kind-setup.sh
 systemctl status docker
 ```
 Start docker `systemctl start docker` if needed.
+```sh
+docker version
+```
+If unable to run docker Add user to docker group `sudo usermod -aG docker $USER` (where $USER is user account) and then refresh session `su - $USER`.
 
 5. Confirm kubectl and kind are installed and accessible.
 ```sh
