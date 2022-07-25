@@ -48,7 +48,7 @@ EOF
 ```
 
 ```sh
-kind create cluster --name kind-demo --config kind.config.yaml
+kind create cluster --name kind-demo --config kind-config.yaml
 ```
 
 7. Confirm cluster access.
