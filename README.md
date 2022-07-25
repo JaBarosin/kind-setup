@@ -34,10 +34,7 @@ docker version
 ```
 If unable to run docker, add user to docker group `sudo usermod -aG docker $USER` (where $USER is user account) and refresh the session `su - $USER`.
 
-5. **Confirm kubectl and kind are installed and accessible.**
-```sh
-kubectl version && echo -e " \n" && kind version
-```
+5. **Confirm kubectl and kind are installed and accessible** by running `kubectl version` and `kind version`
 
 6. **Create kind cluster.**
 ```sh
