@@ -53,6 +53,5 @@ kind create cluster --name kind-demo --config kind-config.yaml
 
 7. Confirm cluster access.
 ```sh
-kubectl cluster-info
-kubectl get no -o wide
+kubectl cluster-info && kubectl get no -o wide
 ```
