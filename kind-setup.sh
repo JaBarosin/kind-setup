@@ -13,16 +13,9 @@
 #
 # Create kind cluster
 
-apt update -y
 apt install open-vm-tools -y
-apt update && sudo apt upgrade -y
-
-
-# Install curl
-apt install curl -y
 
 #Install ssh
-apt update
 apt install openssh-server -y
 ufw allow ssh
 
