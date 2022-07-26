@@ -60,11 +60,15 @@ echo \
 
 apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
-groupadd docker
+
+if [ $(getent group docker) ]; then
+  echo "docker group exists."
+else
+  echo "docker group does not exist."
+  groupadd docker
+fi
+
 usermod -aG docker $USER
 
 # login to new user session to refresh new group changes
 su - $USER
-
-# create cluster
-kind create cluster --name k8s-demo-01
