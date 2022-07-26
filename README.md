@@ -6,12 +6,13 @@ Tested with ubuntu 18.04 and 20.04.
 
 ### Steps
 
-1. **Update and install curl.**
+1. **Update and install vmtools + curl**
 ```sh
-sudo apt update -y
+sudo apt update && sudo apt upgrade -y
+
 ```
-```
-sudo apt install open-vm-tools -y && sudo apt update && sudo apt upgrade -y && sudo apt install curl -y
+```sh
+sudo apt install open-vm-tools curl -y
 ```
 
 2. **Download script to target device.**
