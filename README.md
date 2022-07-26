@@ -9,8 +9,8 @@ Tested with ubuntu 18.04 and 20.04.
 1. **Update and install vmtools + curl**
 ```sh
 sudo apt update && sudo apt upgrade -y
-
 ```
+*If "Could not get lock" error occurs, check to see if Software Updater is already running in background.*
 ```sh
 sudo apt install open-vm-tools curl -y
 ```
@@ -33,7 +33,7 @@ Start docker `systemctl start docker` if needed.
 ```sh
 docker version
 ```
-If unable to run docker, add user to docker group `sudo usermod -aG docker $USER` (where $USER is user account) and refresh the session `su - $USER`.
+If unable to run docker, add user to docker group `sudo usermod -aG docker $USER` and refresh the session `su - $USER`.
 
 5. **Confirm kubectl and kind are installed and accessible**
 ```sh
