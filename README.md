@@ -10,7 +10,7 @@ Tested with ubuntu 18.04 and 20.04.
 ```sh
 sudo apt update && sudo apt upgrade -y
 ```
-*If "Could not get lock" error occurs, check to see if Software Updater is already running in background.*
+If `Could not get lock` error occurs, check to see if Software Updater is already running in background and wait or kill proc listed in error.
 ```sh
 sudo apt install open-vm-tools curl -y
 ```
