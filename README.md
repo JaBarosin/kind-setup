@@ -12,12 +12,12 @@ sudo apt update && sudo apt upgrade -y
 ```
 If `Could not get lock` error occurs, check to see if Software Updater is already running in background and wait or kill proc listed in error.
 ```sh
-sudo apt install open-vm-tools curl -y
+sudo apt install curl -y
 ```
 
 2. **Download script to target device.**
 ```bash
-curl "https://raw.githubusercontent.com/JaBarosin/kind-setup/main/kind-setup.sh" -o "kind-setup.sh"
+curl "https://raw.githubusercontent.com/JaBarosin/kind-setup/main/kind-setup-v2.sh" -o "kind-setup-v2.sh"
 ```
 
 3. **Run script using a user account with sudo access.**
